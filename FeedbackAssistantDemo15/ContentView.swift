@@ -15,15 +15,41 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+                Section {
+                    Text("Timestamps")
+                        .bold()
+                } header: {
+                    testHeader()
+                } footer: {
+                    testFooter()
                 }
-                .onDelete(perform: deleteItems)
+
+                Section {
+                    ForEach(items) { item in
+                        NavigationLink {
+                            Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        } label: {
+                            Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        }
+                    }
+                    .onDelete(perform: deleteItems)
+                } header: {
+                    testHeader()
+                } footer: {
+                    testFooter()
+                }
+
+                Section {
+                    Text("One more Section")
+                        .bold()
+                } header: {
+                    testHeader()
+                } footer: {
+                    testFooter()
+                }
             }
+            .listStyle(.insetGrouped)
+            .listSectionSpacing(.custom(0.0)) // TODO: YAY THANKS FOR THIS!!!
             .toolbar {
 #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -36,8 +62,19 @@ struct ContentView: View {
                     }
                 }
             }
-            Text("Select an item")
         }
+    }
+
+    @ViewBuilder
+    private func testHeader() -> some View {
+        Text("Test Header")
+            .padding(.top, -8) // TODO: How to reduce header spacing without negative padding?
+    }
+
+    @ViewBuilder
+    private func testFooter() -> some View {
+        Text("Test Footer")
+            .padding(.bottom, -8) // TODO: How to reduce footer spacing without negative padding?
     }
 
     private func addItem() {
