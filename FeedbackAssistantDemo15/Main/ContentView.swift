@@ -11,12 +11,14 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
-    
+
+    @State private var isAddingItem: Bool = false
+
     var body: some View {
         NavigationView {
             List {
                 Section {
-                    Text("Timestamps")
+                    Text("List of Names")
                         .bold()
                 } header: {
                     testHeader()
