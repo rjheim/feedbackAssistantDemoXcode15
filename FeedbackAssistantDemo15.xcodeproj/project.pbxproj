@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6224B472A2FA8C400670044 /* Array-SafeIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B462A2FA8C400670044 /* Array-SafeIndex.swift */; };
+		B6224B4A2A2FA97300670044 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B492A2FA97300670044 /* SearchTextField.swift */; };
+		B6224B4C2A2FACA100670044 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B4B2A2FACA100670044 /* ItemListView.swift */; };
+		B6224B4E2A2FAE3200670044 /* ItemAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B4D2A2FAE3200670044 /* ItemAddView.swift */; };
+		B6224B502A2FAF7400670044 /* String-isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B4F2A2FAF7400670044 /* String-isValidEmail.swift */; };
+		B6224B522A2FAFA800670044 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B512A2FAFA800670044 /* SearchView.swift */; };
+		B6224B542A2FDCC500670044 /* ItemSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B532A2FDCC500670044 /* ItemSelectionController.swift */; };
+		B6224B562A2FDDCA00670044 /* ItemSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B552A2FDDCA00670044 /* ItemSelectionView.swift */; };
 		B65BF0042A2F4178009B32CC /* FeedbackAssistantDemo15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BF0032A2F4178009B32CC /* FeedbackAssistantDemo15App.swift */; };
 		B65BF0062A2F4178009B32CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BF0052A2F4178009B32CC /* Item.swift */; };
 		B65BF0082A2F4178009B32CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BF0072A2F4178009B32CC /* ContentView.swift */; };
@@ -15,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6224B462A2FA8C400670044 /* Array-SafeIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array-SafeIndex.swift"; sourceTree = "<group>"; };
+		B6224B492A2FA97300670044 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		B6224B4B2A2FACA100670044 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		B6224B4D2A2FAE3200670044 /* ItemAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddView.swift; sourceTree = "<group>"; };
+		B6224B4F2A2FAF7400670044 /* String-isValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-isValidEmail.swift"; sourceTree = "<group>"; };
+		B6224B512A2FAFA800670044 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B6224B532A2FDCC500670044 /* ItemSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectionController.swift; sourceTree = "<group>"; };
+		B6224B552A2FDDCA00670044 /* ItemSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectionView.swift; sourceTree = "<group>"; };
 		B65BF0002A2F4178009B32CC /* FeedbackAssistantDemo15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackAssistantDemo15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65BF0032A2F4178009B32CC /* FeedbackAssistantDemo15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAssistantDemo15App.swift; sourceTree = "<group>"; };
 		B65BF0052A2F4178009B32CC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -36,6 +52,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6224B432A2FA84C00670044 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				B65BF0052A2F4178009B32CC /* Item.swift */,
+				B6224B4B2A2FACA100670044 /* ItemListView.swift */,
+				B6224B4D2A2FAE3200670044 /* ItemAddView.swift */,
+				B6224B532A2FDCC500670044 /* ItemSelectionController.swift */,
+				B6224B552A2FDDCA00670044 /* ItemSelectionView.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		B6224B442A2FA85E00670044 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B65BF0072A2F4178009B32CC /* ContentView.swift */,
+				B65BF0032A2F4178009B32CC /* FeedbackAssistantDemo15App.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B6224B452A2FA8B600670044 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6224B462A2FA8C400670044 /* Array-SafeIndex.swift */,
+				B6224B4F2A2FAF7400670044 /* String-isValidEmail.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6224B482A2FA96200670044 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B6224B492A2FA97300670044 /* SearchTextField.swift */,
+				B6224B512A2FAFA800670044 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		B65BEFF72A2F4178009B32CC = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +110,14 @@
 		B65BF0022A2F4178009B32CC /* FeedbackAssistantDemo15 */ = {
 			isa = PBXGroup;
 			children = (
-				B65BF0032A2F4178009B32CC /* FeedbackAssistantDemo15App.swift */,
-				B65BF0052A2F4178009B32CC /* Item.swift */,
-				B65BF0072A2F4178009B32CC /* ContentView.swift */,
-				B65BF0092A2F4179009B32CC /* Assets.xcassets */,
 				B65BF00B2A2F4179009B32CC /* FeedbackAssistantDemo15.entitlements */,
 				B65BF00F2A2F4179009B32CC /* Info.plist */,
+				B65BF0092A2F4179009B32CC /* Assets.xcassets */,
+				B6224B452A2FA8B600670044 /* Extensions */,
+				B6224B432A2FA84C00670044 /* Item */,
+				B6224B442A2FA85E00670044 /* Main */,
 				B65BF00C2A2F4179009B32CC /* Preview Content */,
+				B6224B482A2FA96200670044 /* Search */,
 			);
 			path = FeedbackAssistantDemo15;
 			sourceTree = "<group>";
@@ -145,8 +201,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65BF0062A2F4178009B32CC /* Item.swift in Sources */,
+				B6224B542A2FDCC500670044 /* ItemSelectionController.swift in Sources */,
+				B6224B522A2FAFA800670044 /* SearchView.swift in Sources */,
+				B6224B4C2A2FACA100670044 /* ItemListView.swift in Sources */,
+				B6224B562A2FDDCA00670044 /* ItemSelectionView.swift in Sources */,
 				B65BF0042A2F4178009B32CC /* FeedbackAssistantDemo15App.swift in Sources */,
 				B65BF0082A2F4178009B32CC /* ContentView.swift in Sources */,
+				B6224B502A2FAF7400670044 /* String-isValidEmail.swift in Sources */,
+				B6224B472A2FA8C400670044 /* Array-SafeIndex.swift in Sources */,
+				B6224B4E2A2FAE3200670044 /* ItemAddView.swift in Sources */,
+				B6224B4A2A2FA97300670044 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
