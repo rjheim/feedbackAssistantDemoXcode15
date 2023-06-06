@@ -13,6 +13,8 @@
 		B6224B4E2A2FAE3200670044 /* ItemAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B4D2A2FAE3200670044 /* ItemAddView.swift */; };
 		B6224B502A2FAF7400670044 /* String-isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B4F2A2FAF7400670044 /* String-isValidEmail.swift */; };
 		B6224B522A2FAFA800670044 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B512A2FAFA800670044 /* SearchView.swift */; };
+		B6224B542A2FDCC500670044 /* ItemSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B532A2FDCC500670044 /* ItemSelectionController.swift */; };
+		B6224B562A2FDDCA00670044 /* ItemSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6224B552A2FDDCA00670044 /* ItemSelectionView.swift */; };
 		B65BF0042A2F4178009B32CC /* FeedbackAssistantDemo15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BF0032A2F4178009B32CC /* FeedbackAssistantDemo15App.swift */; };
 		B65BF0062A2F4178009B32CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BF0052A2F4178009B32CC /* Item.swift */; };
 		B65BF0082A2F4178009B32CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BF0072A2F4178009B32CC /* ContentView.swift */; };
@@ -27,6 +29,8 @@
 		B6224B4D2A2FAE3200670044 /* ItemAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddView.swift; sourceTree = "<group>"; };
 		B6224B4F2A2FAF7400670044 /* String-isValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-isValidEmail.swift"; sourceTree = "<group>"; };
 		B6224B512A2FAFA800670044 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B6224B532A2FDCC500670044 /* ItemSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectionController.swift; sourceTree = "<group>"; };
+		B6224B552A2FDDCA00670044 /* ItemSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSelectionView.swift; sourceTree = "<group>"; };
 		B65BF0002A2F4178009B32CC /* FeedbackAssistantDemo15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackAssistantDemo15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65BF0032A2F4178009B32CC /* FeedbackAssistantDemo15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAssistantDemo15App.swift; sourceTree = "<group>"; };
 		B65BF0052A2F4178009B32CC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 				B65BF0052A2F4178009B32CC /* Item.swift */,
 				B6224B4B2A2FACA100670044 /* ItemListView.swift */,
 				B6224B4D2A2FAE3200670044 /* ItemAddView.swift */,
+				B6224B532A2FDCC500670044 /* ItemSelectionController.swift */,
+				B6224B552A2FDDCA00670044 /* ItemSelectionView.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -195,8 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65BF0062A2F4178009B32CC /* Item.swift in Sources */,
+				B6224B542A2FDCC500670044 /* ItemSelectionController.swift in Sources */,
 				B6224B522A2FAFA800670044 /* SearchView.swift in Sources */,
 				B6224B4C2A2FACA100670044 /* ItemListView.swift in Sources */,
+				B6224B562A2FDDCA00670044 /* ItemSelectionView.swift in Sources */,
 				B65BF0042A2F4178009B32CC /* FeedbackAssistantDemo15App.swift in Sources */,
 				B65BF0082A2F4178009B32CC /* ContentView.swift in Sources */,
 				B6224B502A2FAF7400670044 /* String-isValidEmail.swift in Sources */,

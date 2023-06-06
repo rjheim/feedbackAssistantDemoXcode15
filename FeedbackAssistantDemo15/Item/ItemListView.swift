@@ -14,16 +14,18 @@ struct ItemListView: View {
 
     @State private var isAddingItem: Bool = false
 
+    @State private var selectedItem: Item?
+    @State private var isSelectingItem: Bool = false
+
     var body: some View {
         NavigationStack {
             List {
                 Section {
-                    Text("List of Names")
-                        .bold()
+                    Text("You can add contacts by name and email here!")
                 } header: {
-                    testHeader()
+                    testHeader("Names")
                 } footer: {
-                    testFooter()
+                    testFooter("Please don't add duplicates :)")
                 }
 
                 Section {
@@ -35,23 +37,37 @@ struct ItemListView: View {
                         }
                     }
                     .onDelete(perform: deleteItems)
-                } footer: {
-                    testFooter()
                 }
 
                 Section {
-                    Text("One more Section")
-                        .bold()
+                    HStack {
+                        Spacer()
+                        VStack(spacing: 12) {
+                            Button("Select Item") {
+                                isSelectingItem = true
+                            }
+                            
+                            if let selectedItem {
+                                Text(selectedItem.name)
+                            } else {
+                                Text("No item selected")
+                            }
+                        }
+                        Spacer()
+                    }
                 } header: {
-                    testHeader()
+                    testHeader("Select an item")
                 } footer: {
-                    testFooter()
+                    testFooter("This is a selected item from a table with Selected Index Items.")
                 }
             }
             .listStyle(.insetGrouped)
             .listSectionSpacing(.custom(0.0)) // TODO: YAY THANKS FOR THIS!!!
             .sheet(isPresented: $isAddingItem) {
                 ItemAddView()
+            }
+            .sheet(isPresented: $isSelectingItem) {
+                ItemSelectionView(availableItems: items, itemSelection: $selectedItem)
             }
             .toolbar {
 #if os(iOS)
@@ -71,14 +87,14 @@ struct ItemListView: View {
     }
 
     @ViewBuilder
-    private func testHeader() -> some View {
-        Text("Test Header")
+    private func testHeader(_ text: String) -> some View {
+        Text(text)
             .padding(.top, -4) // TODO: How to reduce header spacing without negative padding?
     }
 
     @ViewBuilder
-    private func testFooter() -> some View {
-        Text("Test Footer")
+    private func testFooter(_ text: String) -> some View {
+        Text(text)
             .padding(.bottom, -4) // TODO: How to reduce footer spacing without negative padding?
     }
 
